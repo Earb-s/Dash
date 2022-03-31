@@ -61,7 +61,7 @@ df3 = df3.sort_index().reindex()
 
 
 df_selected_all3 = df3[(df3.year.isin(selected_year)) & (df3.month.isin(selected_month)) & (df3.Assignee.isin(selected_person))]
-P_history = px.bar(df_selected_all3, x="month", y="total time_", color="Project Name", title="Project Concentration History     Please note that : this chart includes all persons")
+P_history = px.bar(df_selected_all3, x="month", y="total time_", color="Project Name", title="Project Concentration History")
 #st.markdown('Please note that : this chart includes all persons')
 st.plotly_chart(P_history, use_container_width=True)
 
