@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import base64
 import numpy as np
-import win32com.client
 import time
 import plotly.express as px
 
